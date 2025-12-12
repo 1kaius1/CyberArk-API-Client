@@ -1,7 +1,20 @@
 # If you prefer the allow list template instead of the deny list, see community template:
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+######################################################################
+
+# Configuration files with secrets
+.cyberark_api
+*.json
+!.cyberark_api.sample
+
+# Compiled binary
+cyberark
+cyberark.exe
+
+# Build directory
+build/
+
+# Go build cache
 *.exe
 *.exe~
 *.dll
@@ -18,7 +31,7 @@ coverage.*
 profile.cov
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
 
 # Go workspace file
 go.work
@@ -27,6 +40,14 @@ go.work.sum
 # env file
 .env
 
-# Editor/IDE
-# .idea/
-# .vscode/
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
