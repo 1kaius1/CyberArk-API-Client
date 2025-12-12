@@ -1,0 +1,8 @@
+{
+  "api_secret": "your-api-secret-here",
+  "base_url": "https://your-cyberark-instance.example.com/PasswordVault/api",
+  "username": "api_user",
+  "timeout": 30
+}
+
+
